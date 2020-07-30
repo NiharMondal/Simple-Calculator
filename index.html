@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display-section">
+            <input id="displayDigit" class="display-digit" type="text" placeholder="0" disabled>
+        </div>
+        <div class="grid">
+            <button id="clearAll">AC</button>
+            <button onclick="displayDigit.value += '00'">00</button>
+            <button id="clear">C</button>
+            <button onclick="displayDigit.value += '+'">+</button>
+            <button onclick="displayDigit.value +='1'">1</button>
+            <button onclick="displayDigit.value +='2'">2</button>
+            <button onclick="displayDigit.value +='3'">3</button>
+            <button onclick="displayDigit.value += '-'">-</button>
+            <button onclick="displayDigit.value +='4'">4</button>
+            <button onclick="displayDigit.value += '5'">5</button>
+            <button onclick="displayDigit.value += '6'">6</button>
+            <button onclick="displayDigit.value +='*'">*</button>
+            <button onclick="displayDigit.value += '7'">7</button>
+            <button onclick="displayDigit.value +='8'">8</button>
+            <button onclick="displayDigit.value += '9'">9</button>
+            <button onclick="displayDigit.value +='/'">/</button>
+            <button onclick="displayDigit.value +='.'">.</button>
+            <button onclick="displayDigit.value += '0'">0</button>
+            <button onclick="displayDigit.value = eval(displayDigit.value)" class="result-grid">=</button>
+        </div>
+        <div class="footer">
+            <p><span>Made By Nihar</span></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
